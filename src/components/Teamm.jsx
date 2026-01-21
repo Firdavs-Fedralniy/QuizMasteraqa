@@ -17,13 +17,22 @@ function Teamm({children}) {
 
 let raznica = score.left - score.right
 
-    useEffect(() => {
+  useEffect(() => {
   if (raznica === 3 || raznica === -3) {
-    
-    setShowModal(true)
-    
+    setShowModal(true);
+
+    // Отправка результата в Telegram
+    if (window.Telegram?.WebApp) {
+      window.Telegram.WebApp.sendData(
+        JSON.stringify({
+          left: score.left,
+          right: score.right
+        })
+      );
+    }
   }
-}, [score])     
+}, [score]);
+  
 
     function calculator(e){
        setInputLeftValue(prev => prev + e)
