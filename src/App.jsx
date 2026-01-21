@@ -4,7 +4,7 @@ import Teamm from './components/Teamm'
 import Video from './components/Video'
 import Timer from './components/Timer'
 import "../src/App.css"
-import StartScreen from './components/startScreen'
+import StartScreen from './components/StartScreen'
 
 
 function Main() {
