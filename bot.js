@@ -3,7 +3,7 @@ import TelegramBot from "node-telegram-bot-api";
 const bot = new TelegramBot("7717958664:AAHMwP1aOMCN-W6Q_NFpniDRddhvWYqb-Uc", { polling: true });
 
 bot.onText(/\/start/, (msg) => {
-  bot.sendMessage(msg.chat.id, "Открыть MasterQuiz 👇", {
+  bot.sendMessage(msg.chat.id, "Открывай епта", {
     reply_markup: {
       inline_keyboard: [
         [
