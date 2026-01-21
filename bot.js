@@ -1,6 +1,6 @@
 import TelegramBot from "node-telegram-bot-api";
 
-const bot = new TelegramBot("BOT_TOKEN", { polling: true });
+const bot = new TelegramBot("7717958664:AAHMwP1aOMCN-W6Q_NFpniDRddhvWYqb-Uc", { polling: true });
 
 bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, "Открыть MasterQuiz 👇", {
@@ -9,7 +9,7 @@ bot.onText(/\/start/, (msg) => {
         [
           {
             text: "Открыть игру",
-            web_app: { url: "https://твой-домен.vercel.app" },
+            web_app: { url: "https://second-chance-taupe.vercel.app/" },
           },
         ],
       ],
