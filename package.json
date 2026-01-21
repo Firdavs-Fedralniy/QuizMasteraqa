@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch db.json --port 9000"
+    "server": "json-server --watch public/questions.json --port 9000"
+
   },
   "dependencies": {
     "axios": "^1.13.2",
