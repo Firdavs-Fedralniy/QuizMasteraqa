@@ -90,7 +90,7 @@ export function GameProvider({ children }) {
 
   function fetchQuestions() {
     axios
-      .get("/questions.json") // <--- файл в public/questions.json
+      axios.get("http://localhost:9000/questions")
       .then((res) => dispatch({ type: "setQuestions", payload: res.data }))
       .catch((err) => console.error(err));
   }
