@@ -1,4 +1,4 @@
-import axios from "axios";
+import { questions as localQuestions } from "../data/questions"
 import React, { createContext, useReducer } from "react";
 
 export const GameContext = createContext();
@@ -89,10 +89,7 @@ export function GameProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   function fetchQuestions() {
-    axios
-      axios.get("http://localhost:9000/questions")
-      .then((res) => dispatch({ type: "setQuestions", payload: res.data }))
-      .catch((err) => console.error(err));
+     dispatch({ type: "setQuestions", payload: localQuestions });
   }
 
   return (

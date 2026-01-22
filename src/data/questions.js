@@ -1,0 +1,25 @@
+export const questions = [
+    { "id": 1, "question": "5 + 3", "answer": 8 },
+    { "id": 2, "question": "10 - 4", "answer": 6 },
+    { "id": 3, "question": "2 + 7", "answer": 9 },
+    { "id": 4, "question": "9 - 3", "answer": 6 },
+    { "id": 5, "question": "4 + 4", "answer": 8 },
+
+    { "id": 6, "question": "6 - 2", "answer": 4 },
+    { "id": 7, "question": "3 * 2", "answer": 6 },
+    { "id": 8, "question": "5 * 2", "answer": 10 },
+    { "id": 9, "question": "8 + 1", "answer": 9 },
+    { "id": 10, "question": "7 - 5", "answer": 2 },
+
+    { "id": 11, "question": "6 + 4", "answer": 10 },
+    { "id": 12, "question": "12 - 7", "answer": 5 },
+    { "id": 13, "question": "4 * 3", "answer": 12 },
+    { "id": 14, "question": "9 + 6", "answer": 15 },
+    { "id": 15, "question": "10 - 3", "answer": 7 },
+
+    { "id": 16, "question": "2 * 5", "answer": 10 },
+    { "id": 17, "question": "14 - 6", "answer": 8 },
+    { "id": 18, "question": "7 + 8", "answer": 15 },
+    { "id": 19, "question": "3 + 9", "answer": 12 },
+    { "id": 20, "question": "4 * 4", "answer": 16 }
+];
